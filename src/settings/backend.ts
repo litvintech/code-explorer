@@ -10,14 +10,56 @@ export interface BackendSettings {
   readonly keplrChainInfo?: any;
 }
 
-// Configuration matches local devnet as defined in
-// https://github.com/cosmos/cosmjs/tree/main/scripts/wasmd
 const devnetSettings: BackendSettings = {
-  nodeUrls: ["http://localhost:26659"],
-  denominations: ["ucosm", "ustake"],
-  addressPrefix: "wasm",
-  gasPrice: GasPrice.fromString("0.25ucosm"),
+  nodeUrls: ["http://167.172.103.118:26657"],
+  denominations: ["boot"],
+  addressPrefix: "bostrom",
+  gasPrice: GasPrice.fromString("0.01boot"),
+  keplrChainInfo: {
+    rpc: "http://167.172.103.118:26657",
+    rest: "http://167.172.103.118:1317",
+    chainId: "bostrom-testnet-4",
+    chainName: "bostrom-testnet",
+    stakeCurrency: {
+      coinDenom: "boot",
+      coinMinimalDenom: "boot",
+      coinDecimals: 0,
+    },
+    bip44: {
+      coinType: 118,
+    },
+    bech32Config: {
+      bech32PrefixAccAddr: "bostrom",
+      bech32PrefixAccPub: "bostrompub",
+      bech32PrefixValAddr: "bostromvaloper",
+      bech32PrefixValPub: "bostromvaloperpub",
+      bech32PrefixConsAddr: "bostromvalcons",
+      bech32PrefixConsPub: "bostromvalconspub",
+    },
+    currencies: [
+      {
+        coinDenom: "BOOT",
+        coinMinimalDenom: "boot",
+        coinDecimals: 0,
+      },
+    ],
+    feeCurrencies: [
+      {
+        coinDenom: "BOOT",
+        coinMinimalDenom: "boot",
+        coinDecimals: 0,
+      },
+    ],
+    features: ["stargate"],
+  },
 };
+
+// const devnetStargateSettings: BackendSettings = {
+//   nodeUrls: ["http://167.172.103.118:26657"],
+//   denominations: ["boot"],
+//   addressPrefix: "bostrom",
+//   gasPrice: GasPrice.fromString("0.01boot"),
+// };
 
 // const musselnetSettings: BackendSettings = {
 //   nodeUrls: ["https://rpc.musselnet.cosmwasm.com"],
@@ -25,7 +67,7 @@ const devnetSettings: BackendSettings = {
 //   addressPrefix: "wasm",
 //   gasPrice: GasPrice.fromString("0.25ucosm"),
 // };
-//
+
 // const oysternetSettings: BackendSettings = {
 //   nodeUrls: ["http://rpc.oysternet.cosmwasm.com"],
 //   denominations: ["usponge"],
