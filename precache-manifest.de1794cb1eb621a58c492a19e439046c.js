@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a52f4242374f67358c653d5f1d6f3742",
+    "revision": "aeca6dbf7124f23748044e558de404b3",
     "url": "https://litvintech.github.io/code-explorer/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://litvintech.github.io/code-explorer/static/css/2.8ba42a9a.chunk.css"
   },
   {
-    "revision": "5d2ee2534fe25f2e7353",
+    "revision": "2e7d08aedc18e60a5a44",
     "url": "https://litvintech.github.io/code-explorer/static/css/main.c53404e1.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://litvintech.github.io/code-explorer/static/js/2.03f8973f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5d2ee2534fe25f2e7353",
-    "url": "https://litvintech.github.io/code-explorer/static/js/main.4ee33343.chunk.js"
+    "revision": "2e7d08aedc18e60a5a44",
+    "url": "https://litvintech.github.io/code-explorer/static/js/main.aca4f293.chunk.js"
   },
   {
     "revision": "b3faa0baeaf567ea70c4",
